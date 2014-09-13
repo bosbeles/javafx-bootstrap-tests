@@ -1,0 +1,92 @@
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.list-cell:selected {
+    -fx-border-color: dodgerblue;
+}
+
+.btn {
+
+    COLOR_BACKGROUND: #fff;
+    COLOR_BORDER: #ccc;
+    COLOR_BACKGROUND_DARK: #e6e6e6;
+    COLOR_BORDER_DARK: #adadad;
+    COLOR_TEXT: #333;
+
+    /*-fx-font-family: 'monospace';*/
+    -fx-font-size: 14px;
+    -fx-padding: 6px 12px 6px 12px;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+
+    -fx-text-fill: COLOR_TEXT;
+    -fx-background-color: COLOR_BACKGROUND;
+    -fx-border-color: COLOR_BORDER;
+}
+
+.btn:armed {
+    -fx-effect: innershadow(one-pass-box, rgba(0, 0, 0, 0.125), 20, 0.0, 3, 5);
+}
+
+.btn:hover {
+    -fx-text-fill: COLOR_TEXT;
+    -fx-background-color: COLOR_BACKGROUND_DARK;
+    -fx-border-color: COLOR_BORDER_DARK;
+}
+
+.btn:focused {
+    -fx-background-color: -fx-focus-color, COLOR_BACKGROUND_DARK, COLOR_BACKGROUND_DARK, COLOR_BACKGROUND_DARK;
+    -fx-background-insets: -2, -0.3, 1, 2;
+    -fx-background-radius: 4, 4, 0, 0;
+}
+
+.btn-default {
+
+}
+
+.btn-primary {
+    COLOR_BACKGROUND: #3071a9;
+    COLOR_BORDER: #357ebd;
+    COLOR_BACKGROUND_DARK: derive(COLOR_BACKGROUND, -12%);
+    COLOR_BORDER_DARK: derive(COLOR_BORDER, -10%);
+    COLOR_TEXT: #fff;
+}
+
+.btn-success {
+    COLOR_BACKGROUND: #5cb85c;
+    COLOR_BORDER: #4cae4c;
+    COLOR_BACKGROUND_DARK: derive(COLOR_BACKGROUND, -12%);
+    COLOR_BORDER_DARK: derive(COLOR_BORDER, -10%);
+    COLOR_TEXT: #fff;
+}
+
+.btn-info {
+    COLOR_BACKGROUND: #31b0d5;
+    COLOR_BORDER: #269abc;
+    COLOR_BACKGROUND_DARK: derive(COLOR_BACKGROUND, -12%);
+    COLOR_BORDER_DARK: derive(COLOR_BORDER, -10%);
+    COLOR_TEXT: #fff;
+}
+
+.btn-danger {
+    COLOR_BACKGROUND: #d9534f;
+    COLOR_BORDER: #d43f3a;
+    COLOR_BACKGROUND_DARK: derive(COLOR_BACKGROUND, -12%);
+    COLOR_BORDER_DARK: derive(COLOR_BORDER, -10%);
+    COLOR_TEXT: #fff;
+}
+
+.btn-warning {
+    COLOR_BACKGROUND: #ec971f;
+    COLOR_BORDER: #d58512;
+    COLOR_BACKGROUND_DARK: derive(COLOR_BACKGROUND, -6%);
+    COLOR_BORDER_DARK: derive(COLOR_BORDER, -10%);
+    COLOR_TEXT: #fff;
+}
+
+
+
+
